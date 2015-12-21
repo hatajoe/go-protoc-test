@@ -1,0 +1,12 @@
+package Player;
+
+message Player {
+  required string name = 1;
+  required int32 id = 2;
+  repeated Position pos = 3;
+
+  message Position {
+    required int32 X = 1;
+    required int32 Y = 2;
+  }
+}
